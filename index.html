@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping site</title>
+    <style>
+      body{
+     background-image: url('https://s3.envato.com/files/247292875/ABC06211.JPG');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width:1000px;
+      height:1000px;
+      }
+      .left{
+        position: absolute;
+        left:34px;
+        top:66px;
+        display:inline-block;
+      }
+      @media(min-width: 300px) and (max-width:500px){
+             .left{
+              display:block;
+             }
+      }
+      .mid{
+    display: inline;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    margin: 0px;
+    border: 2px aliceblue;
+     background-color: rgb(161, 219, 245);
+      }
+      .navbar{
+        float: right;
+      }
+      .navbar li{
+        display:inline-block;
+        font-size:20px;
+      
+        }
+        .navbar li a{
+        font-family: "Cambria";
+        font-weight: bold;
+        text-decoration: none;
+        color:rgba(0, 0, 0, 0.79);
+        padding: 5px 5px 5px 5px;
+        margin: 6px;
+        background-color:azure;
+        border-radius: 10px;
+        border-color: rgb(147, 199, 244);
+      }
+      .navbar li a:hover{
+        text-decoration: underline;
+        
+      }
+      .search{
+      position: relative;       
+       right:600px;
+       float: left;
+      }
+      .navbar input{
+         border: 2px solid black;
+         font-weight: bolder;
+        
+         border-radius:10px;
+         padding: 4px;
+         width: 100px;
+         text-align:center;
+      }
+      .left img{
+        width:110px; 
+      }
+      .caption{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        font-size: 26px;
+        color: rgb(233, 58, 104);
+        background-color: azure;
+        position: absolute;
+        text-align: center;
+        top: 200px;
+        left: 260px;
+        width: 550px;
+        border-radius: 16px;
+      }
+      @media(min-width: 150px) and (max-width:800px){
+             .caption{
+              display:block;
+             }
+      }
+      .caption h1{
+        padding: 6px 6px 6px 6px;
+        margin: 6px 6px 6px 6px;
+      }
+      
+      .MensWear img{
+        position: absolute;
+        top: 380px;
+        left: 35px;
+        height: 300px;
+        width: 350px;
+        border-radius: 20px;        
+      }
+      .WomensWear img{
+        position:absolute;
+        top: 380px;
+        left: 430px;
+        height: 300px;
+        width: 350px;
+        border-radius: 20px;        
+      }
+      .BabyFashion img{
+        position:absolute;
+        top: 380px;
+        left: 820px;
+        height: 300px;
+        width: 350px;
+        border-radius: 20px;        
+      }
+      .Accessories img{
+        position: absolute;
+        top: 700px;
+        left: 35px;
+        height: 300px;
+        width: 350px;
+        border-radius: 20px;        
+      }
+      .Shoes img{
+        position:absolute;
+        top: 700px;
+        left: 430px;
+        height: 300px;
+        width: 350px;
+        border-radius: 20px;        
+      }
+      .Watch img{
+        position:absolute;
+        top: 700px;
+        left: 820px;
+        height: 300px;
+        width: 350px;
+        border-radius: 20px;        
+      }
+      .mens h3{
+        position: absolute;
+        top: 520px;
+        left: 150px;
+        color: rgba(0, 0, 0, 0.779);
+        background-color: aliceblue;
+        padding: 6px 6px 6px 6px;
+        margin: 6px 6px 6px 6px;
+        border-radius: 6px;
+        font-size: 20px;
+        font-family: "Cambria";
+        text-align: center;
+      }
+      .women h3{
+        position: absolute;
+        top: 520px;
+        left: 500px;
+        color: rgba(0, 0, 0, 0.779);
+        background-color: aliceblue;
+        padding: 6px 6px 6px 6px;
+        margin: 6px 6px 6px 6px;
+        border-radius: 6px;
+        font-size: 20px;
+        font-family: "Cambria";
+        text-align: center;
+      }
+      .baby h3{
+        position: absolute;
+        top: 520px;
+        left: 910px;
+        color: rgba(0, 0, 0, 0.779);
+        background-color: aliceblue;
+        padding: 6px 6px 6px 6px;
+        margin: 6px 6px 6px 6px;
+        border-radius: 6px;
+        font-size: 20px;
+        font-family: "Cambria";
+        text-align: center;
+      }
+      .accessories h3{
+        position: absolute;
+        top: 820px;
+        left: 150px;
+        color: rgba(0, 0, 0, 0.779);
+        background-color: aliceblue;
+        padding: 6px 6px 6px 6px;
+        margin: 6px 6px 6px 6px;
+        border-radius: 6px;
+        font-size: 20px;
+        font-family: "Cambria";
+        text-align: center;
+      }
+      .shoes h3{
+        position: absolute;
+        top: 820px;
+        left: 540px;
+        color: rgba(0, 0, 0, 0.779);
+        background-color: aliceblue;
+        padding: 6px 6px 6px 6px;
+        margin: 6px 6px 6px 6px;
+        border-radius: 6px;
+        font-size: 20px;
+        font-family: "Cambria";
+        text-align: center;
+      }
+      .watch h3{
+        position: absolute;
+        top: 820px;
+        left: 940px;
+        color: rgba(0, 0, 0, 0.779);
+        background-color: aliceblue;
+        padding: 6px 6px 6px 6px;
+        margin: 6px 6px 6px 6px;
+        border-radius: 6px;
+        font-size: 20px;
+        font-family: "Cambria";
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+          <img src="https://cdn.pixabay.com/photo/2013/07/13/12/17/bag-159543__340.png">
+        </div>
+
+        <div class="mid">
+          <ul class="navbar">
+            <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Shop Now</a></li>
+              <li><a href="#">Contact us</a></li>
+      <div class="search">
+        <input type="text" name="search" id="search" placeholder="Search here">
+      </div>
+          </ul>
+        </div>
+      </header>
+      <div class="caption">
+        <h1>GET UP TO 30% OFF!</h1>
+      </div>
+      <div class="product">
+      <div class="MensWear">
+        <img src="https://media.istockphoto.com/id/890289324/photo/this-completes-the-look.jpg?s=1024x1024&w=is&k=20&c=Jxfzs4woryZJadZlUH6z2oh4BEqPP5RqKsxwivrmeio=">
+      </div>
+      <div class="WomensWear">
+        <img src="https://media.istockphoto.com/id/1349960077/photo/rocking-denim-wear.jpg?s=612x612&w=0&k=20&c=fB3hzEp_aOF2lk6QmMW4sUGDiQhhQkgwQ9OOO3VlDHc=">
+      </div>
+      <div class="Accessories">
+        <img src="https://media.istockphoto.com/id/1440797633/photo/choosing-a-cosmetic-product.jpg?s=1024x1024&w=is&k=20&c=E9hfNFhoUaN2Xr-tf3Bi-MhD3HXGzQXAYKH7rofesfI=">
+      </div>
+      <div class="BabyFashion">
+        <img src="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmFieSUyMGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60">
+      </div>
+      <div class="Shoes">
+        <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGJlc3QlMjBzaG9lcyUyMGltYWdlcyUyMHRvJTIwYmUlMjB1c2VkJTIwaW4lMjB3ZWIlMjBwYWdlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60">
+      </div>
+      <div class="Watch">
+        <img src="https://images.unsplash.com/photo-1615368144592-44708889c926?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+      </div>
+      </div>
+      <div class="mens"><h3>Mens's Wear</h3></div>
+      <div class="women"><h3>Womens's Wear</h3></div>
+      <div class="baby"><h3>Baby's Fashion</h3></div>
+      <div class="accessories"><h3>Accessories</h3></div>
+      <div class="shoes"><h3>Shoes</h3></div>
+      <div class="watch"><h3>Watch</h3></div>
+ </body>
+ </html>
